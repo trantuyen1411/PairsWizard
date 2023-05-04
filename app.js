@@ -81,8 +81,9 @@ app.get( '/posts/:id', (req, res) => {
           </small>
     </div>
   </body>
-</html>`}
+</html>`
   res.send(HTML);
+  }
 });
 
 
