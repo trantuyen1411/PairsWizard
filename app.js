@@ -93,7 +93,7 @@ app.get('/logo.png', (_req,res) => {
 
 
 app.use(express.static(path.join(__dirname, 'public')));
-const PORT = 1337;
+const { PORT = 1337 } = process.env;
 
 app.listen(PORT, () => {
   console.log(`App listening in port ${PORT}`);
